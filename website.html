@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register form</title>
+<style>
+h1{font-style:italic;font-size:20px;text-align:center}
+p{font-size:20px;text-align:center}
+* {
+ box-sizing: border-box;
+}
+form{
+	width:100%;
+	border:1px solid black;
+	padding:auto;
+}
+#circle {
+    background:white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ resize: vertical;
+}
+label {
+ padding: 12px 12px 12px 0;
+ display: inline-block;
+}
+input[type=submit] {
+ background-color: #4CAF50;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ float: left;
+}
+input[type=submit]:hover {
+ background-color: #45a049;
+}
+input[type=image] {
+ background-color: #4CAF50;
+ color: white;
+ padding: 12px 20px;
+ cursor: pointer;
+ float: right;
+}
+input[type=image]:hover {
+ background-color: #45a049;
+}
+.col-25 {
+ float: left;
+ width: 25%;
+ margin-top: 6px;
+}
+.col-75 {
+ float: left;
+ width: 75%;
+ margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+ #wrapper {
+     height: 100px;
+     width: 500px;
+ }
+ #wrapper {
+     bottom: 50%;
+     right: 50%;
+     position: absolute;
+ }
+ #contain {
+     background: #FFF;
+     left: 50%;
+     padding: 10px;
+     top: 50%;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     height: 100%;
+     float:right;
+     position: relative;
+ }
+ #inner1 {
+     height: 100%;
+     border: 1px solid blue;
+ }
+ #inner2 {
+     height: 100%;
+     border: 1px solid green;
+ }
+ #title {
+     cursor: pointer;
+     height: 23px;
+     width: 100%;
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#0A246A, endColorStr=#A6CAF0, GradientType=1);
+     color: white;
+     font:13px arial, helvetica;
+ }
+ #button {
+     line-height: 12px;
+     width: 18px;
+     font-size: 8pt;
+     font-family: tahoma;
+     margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:0;
+     right:0;
+ }
+</style>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	 <!-- header start -->
+  <div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px; padding-bottom:0px;">
+  	<h1 style="color:white;font-size:40px">New member registration</h1>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.php"><img src="img/logo1.png" alt="" width="" height="75px"/></a>
+           
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                
+                 
+                
+                  
+                    
+                    
+<li><a href = "#"><span class = " glyphicon glyphicon-education"></span> About us</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-user" id="circle"></span></a></li>
+                        
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- header close -->
+<br><br><br><br><br><br>
+<form style="margin-left:10px;">
+<table>
+<tr>
+<td>First name:</td><br>
+<td><input type="text" name="" placeholder="enter the first name" required><br></td><br>
+</tr>
+<tr>
+<td>Middle Name:</td>
+<td><input type="text" name="" placeholder="eneter the middle name" ></td>
+</tr>
+<tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="" placeholder="enter the last name" required></td>
+</tr>
+<td>Gender:</td>
+<td><input type="radio" name="Gender" >male
+<input type="radio" name="Gender">female
+<input type="radio" name="Gender">others</td>
+</tr>
+<tr>
+</table>
+<table>
+<tr>
+<td>Contact Number:</td>
+<td>
+<select>
+<option>+91</option>
+<option>+92</option>
+<option>+93</option>
+<option>+94</option>
+</select><br>
+<input type="phone" name="" placeholder="number" required>
+</td>
+</tr>
+<tr>
+<td>Rating</td>
+<td><input type="text" required></td>
+</tr>
+<tr>
+<td>Id No</td>
+<td><input type="text" required></td>
+</tr>
+<tr>
+<td>Id Type</td>
+<td><input type="text" required></td>
+</tr>
+</table>
+<br><br>
+
+Reset the form<input type="reset"><br><br>
+<input type="submit" style="float:right">
+
+<input type="checkbox">I agree that above mentioned information is true to the best of my knowledge
+<br><br>
+<div id="wrapper">
+    <div id="contain">
+        <div id="title">Information Box</div>
+        <div>
+            <input  type="image" value="Upload Image">
+        </div>
+    </div>
+</div>
+
+</form>
+
+
+
+</body>
+</html>
